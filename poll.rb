@@ -12,7 +12,6 @@ Dotenv.load
 
 require 'action_view'
 include ActionView::Helpers::DateHelper
-#comment
 cache = Dalli::Client.new
 
 doc = Nokogiri::HTML(open(ENV['KICKSTARTER_URL']))
